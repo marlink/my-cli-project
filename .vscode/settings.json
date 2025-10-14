@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "python.defaultInterpreterPath": "/usr/bin/python3"
+}
+
+cat > .vscode/launch.json << EOL
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "\${file}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
