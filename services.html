@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Design System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=manrope@400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Design System</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Work</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+            <a href="#" class="contact-btn">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h1>A full-service digital innovation partner</h1>
+            <p>Our rich design and technology expertise delivers top brands and digital experiences.</p>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h2>Branding</h2>
+                <p>At the core of our approach, we maintain that brand and UX are closely connected and work together. Our team specializes in creating and representing digital brand identities across channels, providing strategy assistance and guidelines to ensure consistency.</p>
+                <ul>
+                    <li>Brand Strategy</li>
+                    <li>Brand Architecture</li>
+                    <li>Verbal Identity</li>
+                    <li>Visual Identity</li>
+                    <li>Brand Guidelines</li>
+                    <li>Brand Experiences</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h2>Digital Products</h2>
+                <p>At Design System, we believe everyone deserves an exceptional user experience, whether using a product at work or in their free time. We create memorable enterprise and consumer products as well as provide comprehensive design systems for effortless product iteration.</p>
+                <ul>
+                    <li>Consumer & Enterprise Software</li>
+                    <li>User Research & Testing</li>
+                    <li>CX, UX & Interaction Design</li>
+                    <li>UI Design</li>
+                    <li>Motion Design</li>
+                    <li>Design Systems</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h2>Websites</h2>
+                <p>A website is the most important channel to showcase your brand to customers. Our portfolio features award-winning websites designed to give users the best experience possible while also meeting business goals.</p>
+                <ul>
+                    <li>Content Strategy</li>
+                    <li>Web Design</li>
+                    <li>Interactive Experiences</li>
+                    <li>Content Production</li>
+                    <li>Frontend & Backend Development</li>
+                    <li>CMS Implementation</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h2>Content</h2>
+                <p>Authentic content is essential in the digital world. We work with brands to identify their unique content needs and deliver custom-made assets at the highest quality, down to the last detail.</p>
+                <ul>
+                    <li>Art Direction</li>
+                    <li>Illustration & Graphic Design</li>
+                    <li>Iconography</li>
+                    <li>Animation</li>
+                    <li>Photo & Video</li>
+                    <li>3D</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h2>Development</h2>
+                <p>Our designers and developers collaborate to create websites and products that provide exceptional user experiences and functionality. We optimize search engine visibility, ensure accessibility, and maximize performance.</p>
+                <ul>
+                    <li>Technology Consulting</li>
+                    <li>Architecture Planning</li>
+                    <li>Mobile App Development</li>
+                    <li>Frontend Web Development</li>
+                    <li>Backend Development & API Integration</li>
+                    <li>Emerging Tech (AI, AR/VR, Wearables, Web3)</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                <div class="placeholder-image"></div>
+            </div>
+        </section>
+
+        <section class="industries-section">
+            <h2>Industries</h2>
+            <p>We unite with big brands and startups in various industries to create award-winning work.</p>
+            <div class="industry-logos">
+                <!-- Placeholder for logos -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer-bottom">
+        <div class="footer-content">
+            <h2>Let's create an amazing project together</h2>
+            <a href="#" class="contact-btn footer-btn">Contact us</a>
+            <div class="footer-links-container">
+                <div class="footer-column">
+                    <a href="index.html">Work</a>
+                    <a href="services.html">Services</a>
+                    <a href="#">About</a>
+                    <a href="style-guide.html">Style Guide</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-column social-links">
+                    <a href="#">Dribbble</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2024 Design System</p>
+                <p>San Francisco, CA</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
+</body>
+</html>

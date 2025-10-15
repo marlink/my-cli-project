@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide - Clay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-guide.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&f[]=manrope@400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Clay</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Work</a></li>
+            </ul>
+            <a href="#" class="contact-btn">Contact</a>
+        </nav>
+    </header>
+
+    <main class="style-guide-main">
+        <h1>Style Guide</h1>
+
+        <!-- Colors Section -->
+        <section class="sg-section">
+            <h2>Colors</h2>
+            <div class="sg-color-grid">
+                <div class="sg-color-swatch">
+                    <div class="swatch" style="background-color: var(--background-color);"></div>
+                    <p>Background</p>
+                    <code>#0a0a0a</code>
+                </div>
+                <div class="sg-color-swatch">
+                    <div class="swatch" style="background-color: var(--text-color);"></div>
+                    <p>Text</p>
+                    <code>#e1e1e1</code>
+                </div>
+                <div class="sg-color-swatch">
+                    <div class="swatch" style="background-color: var(--secondary-text-color);"></div>
+                    <p>Secondary Text</p>
+                    <code>#8a8a8a</code>
+                </div>
+                <div class="sg-color-swatch">
+                    <div class="swatch" style="background-color: var(--border-color);"></div>
+                    <p>Border</p>
+                    <code>#2a2a2a</code>
+                </div>
+                <div class="sg-color-swatch">
+                    <div class="swatch" style="background-color: var(--accent-color);"></div>
+                    <p>Accent</p>
+                    <code>#fff</code>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="sg-section">
+            <h2>Typography</h2>
+            <div class="sg-type-specimen">
+                <p class="sg-font-label">Heading Font: Manrope</p>
+                <h1>H1 Heading - Manrope Bold</h1>
+                <h2>H2 Heading - Manrope Bold</h2>
+                <h3>H3 Heading - Manrope Bold</h3>
+            </div>
+            <div class="sg-type-specimen">
+                <p class="sg-font-label">Body Font: Satoshi</p>
+                <p>This is a paragraph of body text. It uses the Satoshi font. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+        </section>
+
+        <!-- UI Elements Section -->
+        <section class="sg-section">
+            <h2>UI Elements</h2>
+
+            <div class="sg-element-container">
+                <h3>Buttons</h3>
+                <a href="#" class="contact-btn">Contact Button</a>
+            </div>
+
+            <div class="sg-element-container">
+                <h3>Navigation</h3>
+                <header class="site-header scrolled">
+                    <nav class="main-nav">
+                        <a href="#" class="logo">Clay</a>
+                        <ul class="nav-links">
+                            <li><a href="#" class="active">Work</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <a href="#" class="contact-btn">Contact</a>
+                    </nav>
+                </header>
+            </div>
+
+            <div class="sg-element-container">
+                <h3>Project Card</h3>
+                <article class="project-card">
+                    <a href="#">
+                        <div class="card-media">
+                            <video loop muted playsinline preload="metadata">
+                                <source src="https://clay.global/wp-content/uploads/2023/11/coinbase-card-1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card-content">
+                            <h3>Project Title</h3>
+                            <p>A short description of the project.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
