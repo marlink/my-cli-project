@@ -64,7 +64,7 @@ ul {
 }
 
 .site-header.scrolled {
-    background-color: rgba(10, 10, 10, 0.7);
+    background-color: rgba(10, 10, 10, .7);
     backdrop-filter: blur(10px);
     border-bottom-color: var(--border-color);
 }
@@ -92,9 +92,9 @@ ul {
     font-size: 1rem;
     font-weight: 500;
     color: var(--secondary-text-color);
-    transition: color 0.3s ease;
+    transition: color .3s ease;
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 .nav-links a:hover {
@@ -120,10 +120,10 @@ ul {
 .contact-btn {
     background-color: var(--accent-color);
     color: var(--background-color);
-    padding: 0.8rem 1.6rem;
+    padding: .8rem 1.6rem;
     border-radius: 50px;
     font-weight: 500;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform .3s ease, background-color .3s ease;
 }
 
 .contact-btn:hover {
@@ -148,7 +148,7 @@ main {
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid var(--border-color);
-    transition: border-color 0.4s ease, transform 0.4s ease;
+    transition: border-color .4s ease, transform .4s ease;
     position: relative;
 }
 
@@ -168,8 +168,8 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.8;
-    transition: opacity 0.4s ease;
+    opacity: .8;
+    transition: opacity .4s ease;
 }
 
 .project-card:hover .card-media video {
@@ -183,7 +183,7 @@ main {
 .card-content h3 {
     font-family: var(--font-family-heading);
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
     font-weight: 700;
 }
 
@@ -239,7 +239,7 @@ main {
 
 .footer-column a {
     color: var(--secondary-text-color);
-    transition: color 0.3s ease;
+    transition: color .3s ease;
 }
 
 .footer-column a:hover {
@@ -253,7 +253,7 @@ main {
     justify-content: space-between;
     align-items: center;
     color: var(--secondary-text-color);
-    font-size: 0.9rem;
+    font-size: .9rem;
 }
 
 /* 5. Responsive Adjustments */
@@ -400,5 +400,136 @@ main {
     }
     .hero-section h1 {
         font-size: 2.5rem;
+    }
+}
+
+/* 7. Contact Page Styles */
+.contact-main {
+    padding: 6rem 2rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.whatsapp-panel {
+    background-color: #075E54;
+    border-radius: 16px;
+    padding: 2rem;
+    color: #fff;
+}
+
+.whatsapp-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.whatsapp-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-header h4 {
+    font-family: var(--font-family-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.whatsapp-body p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    color: #ECE5DD;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: .8rem 1.6rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-align: center;
+    transition: transform .3s ease, background-color .3s ease;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.05);
+    background-color: #128C7E;
+}
+
+.contact-form-container h2 {
+    font-family: var(--font-family-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: var(--secondary-text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--text-color);
+    font-family: var(--font-family-main);
+    font-size: 1rem;
+    transition: border-color .3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.send-button {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: transform .3s ease, background-color .3s ease;
+}
+
+.send-button:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .contact-form-container h2 {
+        font-size: 2rem;
     }
 }
