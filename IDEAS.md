@@ -1,15 +1,15 @@
 # Project Ideas & Tasks
 
-This file contains a list of ideas, features, and tasks to be implemented for the Clay website clone project.
+This file contains a list of ideas, features, and tasks to be implemented for the Design System website clone project.
 
 ## Idea #1: Create the Services Page
 
 - **Status:** `[ ] To Do`
-- **Description:** The main navigation in `index.html` links to `services.html`, but this page doesn't exist yet. Create the `services.html` page using the content from `clay-services.md`.
+- **Description:** The main navigation in `index.html` links to `services.html`, but this page doesn't exist yet. Create the `services.html` page using the content from `ds-services.md`.
 - **Acceptance Criteria:**
   - A new `services.html` file should be created.
   - It should have a structure similar to `index.html` (header, main content, footer).
-  - The content should be parsed and styled from `clay-services.md`.
+  - The content should be parsed and styled from `ds-services.md`.
   - The styles for the services page that are already in `style.css` (like `.service-section`) should be used.
 
 ## Idea #2: Enhance Project Card Video Interaction

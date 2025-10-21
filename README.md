@@ -1,6 +1,6 @@
-# Project: Clay Agency Website Clone
+# Project: Design System Agency Website Clone
 
-This project is a simple clone of the Clay agency website (clay.global/work), built with HTML and CSS. It includes a home page with a project grid, a style guide, and a README file with instructions on how to maintain and extend the website.
+This project is a simple clone of the Design System agency website, built with HTML and CSS. It includes a home page with a project grid, a style guide, and a README file with instructions on how to maintain and extend the website.
 
 ## Getting Started
 

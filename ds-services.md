@@ -75,7 +75,7 @@ We unite with big brands and startups in various industries to create award-winn
 
 ## Let's Talk
 
-*   hey@clay.global
+*   hey@designsystem.global
 *   +1 415 796 6262
 
 *   Work

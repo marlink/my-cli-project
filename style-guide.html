@@ -12,11 +12,15 @@
 
     <header class="site-header">
         <nav class="main-nav">
-            <a href="index.html" class="logo">Clay</a>
+            <a href="index.html" class="logo"><img src="mc-logo.svg" alt="MC Logo" /></a>
             <ul class="nav-links">
                 <li><a href="index.html">Work</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
             </ul>
-            <a href="#" class="contact-btn">Contact</a>
+            <a href="contact.html" class="contact-btn">Contact</a>
         </nav>
     </header>
 
@@ -117,3 +121,14 @@
 
 </body>
 </html>
+
+<script>
+    const header = document.querySelector('.site-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+</script>
