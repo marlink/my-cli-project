@@ -71,8 +71,8 @@
     text-transform: uppercase;
 }
 
-.sg-type-specimen h1, 
-.sg-type-specimen h2, 
+.sg-type-specimen h1,
+.sg-type-specimen h2,
 .sg-type-specimen h3 {
     margin-bottom: 1rem;
 }
@@ -95,6 +95,177 @@
 .sg-element-container .site-header {
     position: static;
     width: auto;
+}
+
+/* Gradient Cards Component Demo - Style Guide Version */
+.gradient-carousel-demo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    background: linear-gradient(135deg, rgba(15, 15, 15, 0.9), rgba(25, 25, 25, 0.9));
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.carousel-container-demo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    max-width: 800px;
+    gap: 25px;
+}
+
+.carousel-container-demo .gradient-card {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    overflow: hidden;
+}
+
+.carousel-container-demo .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(255, 255, 255, 0.05) 50%,
+            rgba(255, 255, 255, 0.02) 100%);
+    opacity: 0;
+
+    /* Component Documentation Styles */
+    .component-description {
+        color: var(--secondary-text-color);
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+
+    .component-usage {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #1a1a1a;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+    }
+
+    .component-usage h4 {
+        font-family: var(--font-family-heading);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+    }
+
+    .component-usage pre {
+        background-color: #0a0a0a;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1rem;
+        overflow-x: auto;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .component-usage code {
+        color: #e1e1e1;
+    }
+
+    transition: opacity 0.6s ease;
+    border-radius: 20px;
+}
+
+.carousel-container-demo .gradient-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.carousel-container-demo .card-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transform: rotate(-2deg);
+    z-index: 1;
+}
+
+.carousel-container-demo .card-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    transform: rotate(1deg);
+    z-index: 2;
+}
+
+.carousel-container-demo .card-3 {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    transform: rotate(-1deg);
+    z-index: 3;
+}
+
+.carousel-container-demo .card-4 {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    transform: rotate(2deg);
+    z-index: 2;
+}
+
+.carousel-container-demo .card-5 {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+
+.carousel-container-demo .gradient-card:hover {
+    background-position: 100% 100%;
+    transform: translateY(-15px) rotate(0deg) scale(1.08) !important;
+}
+
+.carousel-container-demo:hover .gradient-card:not(:hover) {
+    opacity: 0.5;
+    transform: scale(0.85) rotate(0deg) !important;
+    filter: blur(3px) saturate(0.7);
+}
+
+/* Responsive design for style guide demo */
+@media (max-width: 768px) {
+    .gradient-carousel-demo {
+        padding: 2rem 1rem;
+    }
+
+    .carousel-container-demo {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 1rem 0;
+    }
+
+    .carousel-container-demo .gradient-card {
+        position: relative !important;
+        width: 200px;
+        height: 150px;
+        transform: none !important;
+    }
+
+    .carousel-container-demo .gradient-card:hover {
+        transform: translateY(-8px) scale(1.05) !important;
+    }
+
+    .carousel-container-demo:hover .gradient-card:not(:hover) {
+        opacity: 0.8;
+        transform: scale(0.98) !important;
+        filter: blur(1px);
+    }
 }
 
 .sg-element-container .project-card {
